@@ -1,26 +1,29 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 
-import home from "./views/home.vue";
-import about from "./views/About.vue";
-//importare anche projects se c'è
+import Home from './views/home.vue';
+import Projects from './views/projects.vue';
+import Contact from './views/contact.vue';
 
 const routes = [
     {
         path: '/',
         name: 'home',
-        component: home
+        component: Home
     },
     {
-        path: '/about',
-        name: 'about',
-        component: about
+        path: '/projects',
+        name: 'projects',
+        component: Projects
+    },
+    {
+        path: '/contact',
+        name: 'contact',
+        component: Contact
     }
-    //aggiungere anche projects se c'è
-
 ]
 
 const router = createRouter({
-    history: createWebHashHistory(),
+    history: createWebHashHistory(), // qui creo il router con la history di tipo hash
     routes
 })
 
