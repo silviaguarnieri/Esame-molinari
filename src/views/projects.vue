@@ -4,7 +4,7 @@
     <h1 class="text-white text-8xl max-sm:text-2xl font-bold text-center">PROJECTS / ⭐️</h1>
 </section>
 <section class="w-full h-auto flex flex-col">
-    <ul class="w-full h-auto relative ">
+    <ul class="w-full h-auto relative max-sm:h-screen ">
         <li v-for="project in projects" :key="project.id" class="w-full relative h-screen max-sm:h-1/3">
             <img :src="project.imgProject" alt="" class="w-full h-full absolute z-0 inset-0 object-cover">
             <a :href="project.projectLink" target="_blank"  class="absolute bottom-10 left-12 text-white max-sm:bottom-4 max-sm:left-4 ">
